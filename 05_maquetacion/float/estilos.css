@@ -6,20 +6,26 @@ body{
 .content{
 	width: 80%;
 	margin: 0 auto;
+	border:solid;
 }
+
+/*CSS -> dos tipos elementos
+				-> Bloque (div, header, form, section, ul, li, etc)
+					tienen ordenamiento de lectura vertical
+				-> Linea (a, img, span, etc)
+				tienen ordenamiento de lectura horizontal
+*/
 /*selectores agrupados -> usando la coma ","*/
 .caja1,.caja2,.caja3{
 	border: 1px solid grey;
 	background: lightblue;
-	width: 20%;
+	width: 30%;
 }
-
-.caja1{float:left}
-.caja2{float:left}
-.caja3{float:right}
+/* float: left/right + clear:left/rigth/both */
+.caja1{float:left; }
+.caja2{float:left; }
+.caja3{float:right; }
 
 .pie{
-	clear:both;
-	height: 150px;
-	background: orange;
+	clear: both;
 }
