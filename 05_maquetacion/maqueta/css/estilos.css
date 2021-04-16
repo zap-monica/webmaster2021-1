@@ -65,6 +65,58 @@ html{
         width:100%;
     }
 
+    /*Anidar Selectores -> "espacio" o >*/
+    .breadcrumb{
+        padding:1%;
+        background: rgb(46, 133, 233);
+        color:white;
+        margin-bottom: 2%;
+        width:60%;
+    }
+    .breadcrumb a{
+        color:white;
+        /* text-decoration-style:solid;
+        text-decoration-thickness: 2px;
+        text-decoration-color: red ; */
+        text-decoration: underline dotted red 2px ;
+
+    }
+
+    .notaSimple{
+        padding:1%;
+        background:rgba(255,255,255,0.5);
+        /*background: white;
+         opacity:0.5; */
+        }
+        .notaSimple figure{
+            border:1px solid white;
+            border-radius: 20px;
+            overflow:hidden;
+        }
+        .notaSimple figure img{
+            filter:opacity(0.5)
+        }
+        .notaSimple h2{
+            margin:20px 0;
+            font-size:2em;
+        }
+        .notaSimple h3{
+            margin:20px 0;
+            font-size: 1.3em;
+        }
+        .notaSimple p{
+            margin-bottom: 20px;
+        }
+
+        /* SASS - SCSS -> A pedido de Fede
+        .notaSimple{
+            color:blue;
+            a { 
+            }
+        }
+        */
+    
+
 
 .banner{
     width:20%;
