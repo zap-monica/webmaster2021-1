@@ -26,12 +26,61 @@ html{
 .navbar{
     background: rgb(4, 4, 70);
     color: white;
+    /* padding:2%;  */
     text-align:end;
-    padding:2%; 
     }
-    /* a{
-        color:white;
-    } */
+    /* Menu principal */
+    .navbar ul{
+        list-style-type: none;
+        }
+        .navbar ul li{
+            /* float:left; */
+            display:inline-block;
+            }
+            .navbar ul li a{
+                color:white;
+                text-decoration: none;
+                padding:15px;
+                display: block;
+                }
+                /* pseudo-clases */
+                /* :hover -> sobre elemento */
+                .navbar ul li a:hover{
+                    /* text-decoration:underline; */
+                    background: white;
+                    color:rgb(4, 4, 70);
+                }
+                /* :active -> clic activo o sostenido */
+                .navbar ul li a:active{
+                    background: rgba(255, 255, 255, 0.555);
+                    border-radius:5px;
+                    
+                }
+
+                .active{
+                    background: red;
+                    color:rgb(4, 4, 70) ;
+                }
+                /* 
+                active segun Fede
+                .active{
+                    background: red;
+                    color:rgb(4, 4, 70) ;
+                    padding:15px;
+                    display: block;
+                }
+                */
+
+        /* .notaSimple:hover{
+            background: red;
+        } */
+
+
+
+
+
+
+
 
 /* Contenido */
 
