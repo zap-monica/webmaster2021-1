@@ -7,6 +7,9 @@ body{
 	width: 80%;
 	margin: 0 auto;
 	border:solid;
+	background: violet;
+	padding:20px;
+	float:right;
 }
 
 /*CSS -> dos tipos elementos
@@ -20,11 +23,16 @@ body{
 	border: 1px solid grey;
 	background: lightblue;
 	width: 30%;
+	height: 100px;
 }
 /* float: left/right + clear:left/rigth/both */
-.caja1{float:left; }
-.caja2{float:left; }
+.caja1{float:right; }
+.caja2{float:right; }
 .caja3{float:right; }
+
+.limpiarFloat{
+	clear: both;
+}
 
 .pie{
 	clear: both;

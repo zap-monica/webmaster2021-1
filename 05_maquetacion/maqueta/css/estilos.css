@@ -103,12 +103,39 @@ html{
         background: white;
         padding: 15px;
         margin-bottom: 15px;
-    }
-    .simple{
+        }
+        .highlight1 .txt1{
+            float: left;
+            width: 60%;
+        }
+        .highlight1 .img1{
+            float: right;
+            width: 40%;
+            max-height: 120px;
+            overflow: hidden;
+        }
+        .highlight1 figure img{
+            width:100%;
+            
+        }
+
+        .limpiarFloat{
+            clear:both;
+        }
+
+    .simpleIzq{
         background: white;
         padding: 15px;
-        width: 50%;
+        width: 48%;
         float:left;
+        margin-bottom: 15px;
+    }
+    .simpleDer{
+        background: white;
+        padding: 15px;
+        width: 48%;
+        float:right;
+        margin-bottom: 15px;
     }
     .imgNota{
         width:100%;
