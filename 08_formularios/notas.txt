@@ -2,10 +2,11 @@
 Formularios HTML
 
 <form>
+    -> elemnto de bloque
     -> action: la accion del form -> action="mailto:mail"
     -> method: metodo de envio (verbos HTTP) / POST-GET -> "POST"
 
-    Datos:
+    Datos: (elementos de linea)
 
     <input>
         campo de texto, de linea simple 
