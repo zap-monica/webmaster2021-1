@@ -116,9 +116,8 @@ html{
         }
         .highlight1 figure img{
             width:100%;
-            
-        }
 
+        }
         .limpiarFloat{
             clear:both;
         }
@@ -211,3 +210,70 @@ html{
     padding: 4%;
     text-align: center;
 }
+
+/* Formulario de contacto */
+.principal h2{
+    margin:20px 0;
+}
+#formContacto{
+    background: rgba(255, 255, 255, 0.301);
+    padding: 20px;
+    border-radius:10px;
+    width:70%;
+    margin: 0 auto;
+    }
+    #formContacto input{
+        width:100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius:3px;
+    }
+    /* 
+    Ojo con la especificidad, aplicando una clase a una etiqueta
+    .anchoAuto{
+        width: auto !important;
+    } */
+
+    #formContacto input[type="radio"]{
+        width:auto;
+        margin-right: 10px;
+    }
+    #formContacto input[type="checkbox"]{
+        width: auto;
+        margin-right: 10px;
+    }
+
+    #formContacto select{
+        width:100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius:3px;
+    }
+    #formContacto textarea{
+        width:100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius:3px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8em; /* valor heredado*/
+    }
+
+    #formContacto button[type="submit"]{
+        margin-top: 30px;
+        width:80%;
+        padding: 10px;
+        background: rgb(15, 15, 146);
+        color:white;
+        border:none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        transition: 1s;
+    }
+    #formContacto button[type="submit"]:hover{
+            cursor: pointer;
+            background: rgb(76, 76, 233);
+        }

@@ -31,3 +31,9 @@ Formularios HTML
         Accesibilidad
     </label>
 </form>
+
+atributos
+    - required -> campo obligatorio (Validacion de datos)
+    - placeholder -> texto informativo
+    - autofocus -> foco automatico
+    - pattern -> expresion regular

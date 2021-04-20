@@ -47,7 +47,7 @@
                 <div>
                     <label>
                         <span>Nombre</span>
-                        <input type="text" name="nombre">
+                        <input type="text" name="nombre" placeholder="escriba su nombre" required>
                     </label>
                 </div>
                 
@@ -55,30 +55,30 @@
                     <label for="campoemail">
                         <span>Email</span>
                     </label>
-                    <input type="email" name="email" id="campoemail">
+                    <input type="email" name="email" id="campoemail" required>
                 </div>
                 
                 <!-- form (nombre, email, localidad, genero, comentario, suscripcion) -->
 
                 <div>
                     <span>Localidad</span>
-                    <select name="localidad" id="">
+                    <select name="localidad" id="" title="Seleccione una localidad" required> 
                         <option value="avellaneda">Avellaneda</option>
                         <option value="moron">Morón</option>
                         <option value="san_nicolas">San Nicolas</option>
                         <option value="vic_lopez">Vicente López</option>
-                        <option selected>Seleccione</option>
+                        <option>Seleccione</option>
                     </select>
                 </div>
 
                 <div>
                     <span>Genero</span>
                     <p>
-                        <input type="radio" name="genero" value="Femenino"> Femenino
+                        <input type="radio" name="genero" value="Femenino" class="anchoAuto"> Femenino
                         <br>
-                        <input type="radio" name="genero" value="Masculino"> Masculino
+                        <input type="radio" name="genero" value="Masculino" class="anchoAuto"> Masculino
                         <br>
-                        <input type="radio" name="genero" value="Otro">
+                        <input type="radio" name="genero" value="Otro" class="anchoAuto">
                         Otro
                     </p>
                 </div>
@@ -87,8 +87,7 @@
                     <label>
                         <span>Comentario</span>
                         <br>
-                        <textarea name="comentario">
-                        </textarea>
+                        <textarea required name="comentario"></textarea>
                     </label>
                 </div>
 
@@ -98,7 +97,7 @@
                         <span>Acepto los terminos y condiciones del sitio, para que me envien SPAM</span>
                     </label>
                 </div>
-                <input type="submit" value="Enviar">
+                <!-- <input type="submit" value="Enviar"> -->
                 <button type="submit">Enviar</button>
 
             </form>
