@@ -54,7 +54,7 @@ html{
 /*section{*/
 #secc-1,#secc-2,#secc-3,#secc-4,#secc-5,#secc-6{
 	padding-top:50px;
-	min-height: 400px;
+	height:100vh;
 	/*Border vs outline -> 
 	border es parte del modelo de caja -> tamaño de los bloques
 	Outline no ocupa espacio
