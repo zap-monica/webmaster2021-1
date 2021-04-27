@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    padding:0;
+}
+
 img{
     width:100%;
 }
@@ -48,6 +53,7 @@ Un absoluto tiene que estar anidado en un div distinto de static
     background: grey;
     height: 500px;
     width: 50%;
+    left:25%;
     
     }
     .espacio{
@@ -70,3 +76,14 @@ Un absoluto tiene que estar anidado en un div distinto de static
         z-index:99999999;
         padding: 2%;
     }
+
+/* fondo de video */
+.fondoVideo{
+    width:100vw; /*Viewport Width*/
+    height: 100vh; /*viewport Height*/
+    position: fixed;
+    background: green;
+}
+.fondoVideo video{
+    opacity: 0.6;
+}
