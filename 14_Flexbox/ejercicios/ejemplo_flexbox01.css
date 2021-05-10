@@ -4,18 +4,59 @@ html{
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+.header{
+	padding: 10px;
+	background: royalblue;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	/* align-content: flex-start; */
+	}
+	.logo{}
+	.navbar{
+		/* background: white; */
+	}
+	.navbar a{
+		color:white;
+		margin-left: 10px;
+	}
 
+
+/* Flex container */
 .contenedor{
+	width:80%;
+	margin: 0 auto;
+	height: 80vh;
 	background-color: rgb(40, 40, 107);
 	padding:2%;
+	display:flex;
+	/* Define el eje principal -> row / column */
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* atajo -> direction + wrap */
+	/* flex-flow: row wrap; */
+	/* Funciona sobre el eje principal */
+	justify-content: space-around;
+	/* Funciona sobre el eje secundario */
+	align-content: space-around;
 	}
+	/* flex items */
 	.item{
 		background-color: #ccc;
-		width: 15%;
-		margin-bottom: 10px;
+		width: 30%;
+		/* margin-bottom: 10px; */
 		text-align: center;
 		/* line-height: 75px; */
 		font-size: 30px;
+		/* float:left */
+		/* padding: 10px; */
+		box-sizing: border-box;
 		}
 		
+/* .item-5{width:50%; border:1px solid} */
 
+.item-10{
+	display:flex;
+	flex-wrap: wrap;
+}
