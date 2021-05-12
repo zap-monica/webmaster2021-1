@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-family: "arial";
+	font-size: 16px;
+}	
+
+#contenedor{
+	width: 90%;
+	margin: 0 auto;
+}
+.primero{
+	background: rgb(207,0,15);
+	width: 30%;
+	padding: 1%;
+}
+.segundo{
+	background: rgb(34,167,240);
+	width: 30%;
+	padding: 1%;
+}
+.tercero{
+	background: rgb(38,166,91);
+	width: 30%;
+	padding: 1%;
+}
+#contenedor img{width: 100%}
+
+.banner{ text-align: center; margin:2%}
+
