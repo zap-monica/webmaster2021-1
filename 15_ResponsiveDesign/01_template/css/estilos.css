@@ -11,23 +11,117 @@ html{
 #contenedor{
 	width: 90%;
 	margin: 0 auto;
-}
-.primero{
-	background: rgb(207,0,15);
-	width: 30%;
-	padding: 1%;
-}
-.segundo{
-	background: rgb(34,167,240);
-	width: 30%;
-	padding: 1%;
-}
-.tercero{
-	background: rgb(38,166,91);
-	width: 30%;
-	padding: 1%;
-}
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	}
+	.primero{
+		background: rgb(207,0,15);
+		width: 30%;
+		padding: 2%;
+	}
+	.segundo{
+		background: rgb(34,167,240);
+		width: 30%;
+		padding: 2%;
+	}
+	.tercero{
+		background: rgb(38,166,91);
+		width: 30%;
+		padding: 2%;
+	}
 #contenedor img{width: 100%}
+.banner img{width: 100%}
 
-.banner{ text-align: center; margin:2%}
+.banner{ 
+	text-align: center; 
+	margin:0 auto; 
+	width:60%;
+}
+
+.footer{
+	background: rgb(5, 30, 36);
+	padding: 5% ;
+	text-align: center;
+	color:white
+}
+
+/* Media Queries */
+/* screen es el dispo. generico -> todo lo que sean pantallas */
+
+/* Grandes -> 960px - 1200px */
+@media screen and (min-width:961px) and (max-width:1200px){
+	body{
+		background: rgb(236, 52, 52);
+	}
+	.primero, .segundo, .tercero{
+		width: 32%;
+		padding: 0;
+	}
+	.contenido{
+		padding: 20px;
+	}
+}
+/* Medianos -> 601px - 960px */
+@media screen and (min-width:600px) and (max-width:960px){
+	body{
+		background: gold;
+	}
+	#contenedor{
+		/* flex-direction: column; */
+		flex-wrap:wrap;
+		font-size: 18px;
+	}
+	.primero{
+		width:100%;
+		font-size: 1.3em;
+	}
+	.primero .imagen{
+		max-height: 250px;
+		overflow: hidden;
+		}
+		.primero .imagen img{
+			transform: translateY(-90px);
+		}
+	.segundo, .tercero{
+		width:50%;
+		font-size: 1.3em;
+	}
+	.primero .contenido{
+		padding-bottom: 20px;
+		display: flex;
+		align-items: center;
+		}
+		.primero .contenido h2{width: 40% ;}
+		.primero .contenido p{width: 60% ;}
+
+	.contenido h2, .contenido h3{
+		margin-top: 20px;
+	}
+
+
+}
+/* Pequeños -> 0px - 600px */
+@media (min-width:0px) and (max-width:600px){
+	body{background: none}
+
+	#contenedor{
+		flex-direction: column;
+		width:100%;
+	}
+	.primero, .segundo, .tercero{
+		width: 100%;
+		padding:3%;
+	}
+
+	.banner{
+		/* position:fixed;
+		bottom: 0;
+		left:18%;
+		width:70%; */
+
+		display:none;
+		/* visibility: hidden; */
+	}
+}
 
