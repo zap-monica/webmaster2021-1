@@ -5,6 +5,7 @@ body{
 
 .header{
     background: #00aeac;
+    z-index: 999999999999;
 }
 
 .barra{
@@ -15,7 +16,7 @@ body{
 .slider{
     /*#948295 #5f5f85 #646d8e*/
     background: linear-gradient(-60deg, #948295,#5f5f85,#646d8e);
-    height: 300px;
+   
 }
 
 .noticias .row figure img{
